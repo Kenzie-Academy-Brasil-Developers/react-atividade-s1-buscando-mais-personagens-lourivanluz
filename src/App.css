@@ -1,0 +1,68 @@
+html,
+body,
+ul,
+li,
+div,
+p,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+}
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.navButton {
+  height: 100vh;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 32px;
+  position: fixed;
+  top: 0;
+}
+
+.navButton:hover {
+  font-size: 40px;
+}
+
+.navButton--right {
+  right: 3px;
+}
+.navButton--left {
+  left: 3px;
+}
+
+@media (min-width: 1230px) {
+  .navButton--right {
+    right: calc(50% - 620px);
+    width: 60px;
+  }
+  .navButton--left {
+    left: calc(50% - 620px);
+    width: 60px;
+  }
+}
